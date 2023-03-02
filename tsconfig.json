@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./build",
+    "types": [
+      "element-plus/global"
+    ]
+  },
+}

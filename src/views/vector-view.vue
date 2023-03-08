@@ -1,11 +1,18 @@
-<script setup></script>
+<script setup>
+import * as Cesium from 'cesium';
+import { onMounted, ref } from 'vue';
+console.log(Cesium.VERSION);
+onMounted(() => {
+  const viewer = new Cesium.Viewer("map");
+});
+</script>
 
 <template>
-  <el-button>测试</el-button>
-  <div class="bg"></div>
+  <div id="map"></div>
 </template>
 
 <style scoped lang="scss">
+
 .bg {
   background-color: $background-color;
   width: 300px;
